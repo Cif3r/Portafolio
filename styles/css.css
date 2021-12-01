@@ -6,31 +6,85 @@ html, body{
 
 }
 
-.container{
+.inicio{
     display: flex;
-    min-height: 80vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+.aboutme{
+	display: flex;
+	min-height: 100vh;
+	background-color: rgba(255, 255, 255, 0.431);
+	padding: 60px 15px;
+	justify-content: center;
+	width: 100%;
+	text-align: left;
+}
+.contenedor{
+	width: 80%;
+}
 
-h2, h1{
+.foto{
+	margin-top: 3%;
+	display: flex;
+	background-color: rgb(202, 202, 202);
+	border-color: rgb(0, 0, 0);
+	border-radius: 2rem;
+	border-style: solid;
+	background-image: url("/imgs/peril.png");
+	background-size: cover;
+	height: 300px;
+	width: 260px;
+	justify-content	: left;
+}
+
+hr{
+	width: 360px;
+	height: 6px;
+	border: none;
+	background-color: rgb(185, 31, 31);
+
+}
+.m1, .m1 h3{
+	text-align: start;
+	width: 80%;
+	padding: 0%;
+	margin: 0%;
+}
+
+h2, h1, h3{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.aboutme .container h1 {
     font-family: 'Roboto Mono', monospace;
 
 }
-.nombre{
+.aboutme .container h3 {
+    font-family: 'Roboto Mono', monospace;
+	color: rgb(96, 192, 195);
+}
+
+.container{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: 1.3rem;
+	border-radius: 3rem;
+	text-align: center;
+	width: 100%;
+
 }
 
-.nombre h1{
+.container h1{
     display: inline;
     margin: 0%;
     font-size: 3em;
     font-weight: 600;
     white-space: nowrap;
+
     
 }
 
@@ -146,16 +200,18 @@ nav.mb ul{
   }
 
   @media only screen and (max-width: 823px){
-	.nombre {
-    font-size: 3vw;
+	.inicio {
+    font-size: 11vw;
 	}
+
+	.container{
+		font-size: 3vw;
+	}
+
 	nav.mb{
 		display: none;
 	}
 	
-	.container{
-		font-size: 11vw;
-	}
 
 	nav.mobil{
 		display: flex;
