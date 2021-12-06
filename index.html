@@ -14,18 +14,18 @@
 <!-- inicio de cuerpo -->
 
 <body>
-    <script async> 
-        window.onscroll = function() {
-    const docScrollTop = document.documentElement.scrollTop;
-    if (window.innerWidth > 180) {
-        if(docScrollTop > 10) {
-            document.querySelector(".header").classList.add("fixed");
-        }
-        else {
-            document.querySelector(".header").classList.remove("fixed");
-        }
-    }
-    };
+    <script async>
+        window.onscroll = function () {
+            const docScrollTop = document.documentElement.scrollTop;
+            if (window.innerWidth > 180) {
+                if (docScrollTop > 10) {
+                    document.querySelector(".header").classList.add("fixed");
+                }
+                else {
+                    document.querySelector(".header").classList.remove("fixed");
+                }
+            }
+        };
     </script>
     <!-- inicio de header -->
     <header>
@@ -36,7 +36,7 @@
                     <li><a href="#inic">Inicio</a></li>
                     <li><a href="#abou">Sombre mí</a></li>
                     <li><a href="#skil">Skills</a></li>
-                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#proy">Portafolio</a></li>
                 </ul>
             </nav>
         </div>
@@ -48,9 +48,10 @@
         <div>
             <ul>
                 <li>
-                    <a href="#inic"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-smart-home"
-                            width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6f32be" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                    <a href="#inic"> <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-smart-home" width="36" height="36" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="#6f32be" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M19 8.71l-5.333 -4.148a2.666 2.666 0 0 0 -3.274 0l-5.334 4.148a2.665 2.665 0 0 0 -1.029 2.105v7.2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-7.2c0 -.823 -.38 -1.6 -1.03 -2.105" />
@@ -84,7 +85,7 @@
                             <rect x="3" y="14" width="6" height="6" rx="1" />
                         </svg></a></li>
                 <li>
-                    <a href="#inic">
+                    <a href="#proy">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-notebook" width="36"
                             height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7bc62d" fill="none"
                             stroke-linecap="round" stroke-linejoin="round">
@@ -100,6 +101,9 @@
         </div>
     </nav>
     <!-- FIn menu # 2 para mivil -->
+    <section class="secciones"> 
+
+
     <!-- inicio Caracteristicas nombre -->
     <section class="inicio" id="inic">
         <div class="container">
@@ -230,108 +234,167 @@
             </div>
 
             <div class="cajas">
-                    <div class="bloque">
-                        <div class="svg2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="48"
-                                height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <rect x="13" y="8" width="8" height="12" rx="1" />
-                                <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
-                                <line x1="16" y1="9" x2="18" y2="9" />
-                            </svg>
-                            <h3>Responsive Design</h3>
-                        </div>
-                        <p> Sitios adaptables a cualquier dispositivo de escritorio o moviles</p>
+                <div class="bloque">
+                    <div class="svg2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-devices" width="48"
+                            height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="13" y="8" width="8" height="12" rx="1" />
+                            <path d="M18 8v-3a1 1 0 0 0 -1 -1h-13a1 1 0 0 0 -1 1v12a1 1 0 0 0 1 1h9" />
+                            <line x1="16" y1="9" x2="18" y2="9" />
+                        </svg>
+                        <h3>Responsive Design</h3>
                     </div>
+                    <p> Sitios adaptables a cualquier dispositivo de escritorio o moviles</p>
+                </div>
 
-                    <div class="bloque">
-                        <div class="svg2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wand" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <polyline points="6 21 21 6 18 3 3 18 6 21" />
-                                <line x1="15" y1="6" x2="18" y2="9" />
-                                <path d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
-                                <path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
-                              </svg>
-                            <h3>Diseño Creativo</h3>
-                        </div>
-                        <p> Diseños atractivos con una interfaz intuitiva que ofrezca gratas experiencias.</p>
+                <div class="bloque">
+                    <div class="svg2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wand" width="48"
+                            height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <polyline points="6 21 21 6 18 3 3 18 6 21" />
+                            <line x1="15" y1="6" x2="18" y2="9" />
+                            <path d="M9 3a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+                            <path d="M19 13a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+                        </svg>
+                        <h3>Diseño Creativo</h3>
                     </div>
+                    <p> Diseños atractivos con una interfaz intuitiva que ofrezca gratas experiencias.</p>
+                </div>
 
-                    <div class="bloque">
-                        <div class="svg2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gauge" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                                <circle cx="12" cy="12" r="9" />
-                                <circle cx="12" cy="12" r="1" />
-                                <line x1="13.41" y1="10.59" x2="16" y2="8" />
-                                <path d="M7 12a5 5 0 0 1 5 -5" />
-                              </svg>
-                            <h3>Rendimiento</h3>
-                        </div>
-                        <p> Conversiones. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
+                <div class="bloque">
+                    <div class="svg2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gauge" width="48"
+                            height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <circle cx="12" cy="12" r="9" />
+                            <circle cx="12" cy="12" r="1" />
+                            <line x1="13.41" y1="10.59" x2="16" y2="8" />
+                            <path d="M7 12a5 5 0 0 1 5 -5" />
+                        </svg>
+                        <h3>Rendimiento</h3>
                     </div>
+                    <p> Conversiones. Los sitios de alto rendimiento atraen y retienen a los usuarios.</p>
+                </div>
             </div>
         </div>
     </section>
 
-<footer>
-    <div class = "container">
-        <h2>Ten un buen dia!!</h2>
-        <div class="pfooter">
-            <p>Soy desarrollador junior en constante crecimiento, siempre dispuesto a aprender, con la mejor acritud y compromiso, si así lo deseas puedes ponerte en contacto conmigo.</p>
+    <section class="proyects" id="proy">
+        <div class="container">
+            <div class="m1">
+                <h1>Proyectos</h1>
+            </div>
+            <div class="proyec">
+                <div class="pr">
+                    <img src="/imgs/proyect1.png" alt="">
+                    <div class="prhover">
+                        <span>PORTAFOLIO</span>
+                        <p>HTML - CSS</p>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            Visitar Pagina</a>
+                    </div>
+                </div>
+                <div class="pr">
+                    <img src="/imgs/proyect1.png" alt="">
+                    <div class="prhover">
+                        <span>PORTAFOLIO</span>
+                        <p>HTML - CSS</p>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            Visitar Pagina</a>
+                    </div>
+                </div>
+                <div class="pr">
+                    <img src="/imgs/proyect1.png" alt="">
+                    <div class="prhover">
+                        <span>PORTAFOLIO</span>
+                        <p>HTML - CSS</p>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" />
+                                <line x1="10" y1="14" x2="20" y2="4" />
+                                <polyline points="15 4 20 4 20 9" />
+                              </svg>
+                            Visitar Pagina</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      
-        <div class="conredes">
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-linkedin" width="44" height="44"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="red" d="M0 0h24v24H0z" fill="white" />
-                        <rect x="4" y="4" width="16" height="16" rx="2" />
-                        <line x1="8" y1="11" x2="8" y2="16" />
-                        <line x1="8" y1="8" x2="8" y2="8.01" />
-                        <line x1="12" y1="16" x2="12" y2="11" />
-                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                    </svg>
-                </a>
-            </li>
+    </section>
 
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-github" width="44" height="44"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="red" d="M0 0h24v24H0z" fill="white" />
-                        <path
-                            d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                    </svg>
-                </a>
-            </li>
+</section>
 
-            <li>
-                <a href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44"
-                        viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="red" d="M0 0h24v24H0z" fill="white" />
-                        <rect x="3" y="5" width="18" height="14" rx="4" />
-                        <path d="M10 9l5 3l-5 3z" />
-                    </svg>
-                </a>
-            </li>
+    <footer>
+        <div class="container">
+            <h2>Ten un buen dia!!</h2>
+            <div class="pfooter">
+                <p>Soy desarrollador junior en constante crecimiento, siempre dispuesto a aprender, con la mejor acritud
+                    y compromiso, si así lo deseas puedes ponerte en contacto conmigo.</p>
+            </div>
+
+            <div class="conredes">
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="red" d="M0 0h24v24H0z" fill="white" />
+                            <rect x="4" y="4" width="16" height="16" rx="2" />
+                            <line x1="8" y1="11" x2="8" y2="16" />
+                            <line x1="8" y1="8" x2="8" y2="8.01" />
+                            <line x1="12" y1="16" x2="12" y2="11" />
+                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="red" d="M0 0h24v24H0z" fill="white" />
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                        </svg>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                            width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="red" d="M0 0h24v24H0z" fill="white" />
+                            <rect x="3" y="5" width="18" height="14" rx="4" />
+                            <path d="M10 9l5 3l-5 3z" />
+                        </svg>
+                    </a>
+                </li>
+            </div>
         </div>
-    </div>
-    <div class="base">
-        <hr>
-        <p>Luis E. Lerma 2021 © Todos los derechos reservados</p> 
-    </div>
-</footer>
+        <div class="base">
+            <hr>
+            <p>Luis E. Lerma 2021 © Todos los derechos reservados</p>
+        </div>
+    </footer>
 
 </body>
 <!-- fin de cuerpo -->
