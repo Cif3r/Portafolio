@@ -305,7 +305,9 @@ nav.mobil{
 }
 .skills .container .cajas .bloque{
 
-  margin: 2rem;
+  margin:0px 10px;
+  margin-bottom: 30px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -498,19 +500,22 @@ footer .container .conredes li{
 /* CONTAINER BASIC CONFIGURACION FINAL */
 /* -------------------------------------------------------------------- */
 @media only screen and (max-width: 1080px){
- .aboutme .container{
-	 font-size: 1.5vw;
- }
- .skills .container .icons{
-	 width: 90%;
- }
- .aboutme .container .contenedor .foto img{
-	width: 23vw;
-    height: 26vw;
-    box-shadow: 6px 6px 30px #d1d9e6;
-    border-radius: 20px;
-	margin-top: -6px;
- }
+	header .header nav.mb ul li a{
+		font-size: 2vw;
+	}
+	.aboutme .container{
+		font-size: 1.5vw;
+	}
+	.skills .container .icons{
+		width: 90%;
+	}
+	.aboutme .container .contenedor .foto img{
+		width: 23vw;
+		height: 26vw;
+		box-shadow: 6px 6px 30px #d1d9e6;
+		border-radius: 20px;
+		margin-top: -6px;
+	}
 }
 
 
@@ -522,6 +527,9 @@ footer .container .conredes li{
 	header .header{
 		font-size: 1rem;
 	}	
+	.header.fixed{
+		height: 10vw;
+		}
 	/* header query final */
 	/* nav mb inicio */
 	nav.mb{
@@ -530,8 +538,8 @@ footer .container .conredes li{
 	/* nav mb final */
 		/* inicio */
 	.inicio{
-		background-image: none;
 		font-size: 10vw;
+		background-position: -26rem;
 	}
 	.inicio .container{
 		font-size: 2.9vw;
@@ -543,11 +551,10 @@ footer .container .conredes li{
 		margin-top: 3rem;
 	}
 	.skills{
-		background-image: none;
+		background-position: -1466px;
 	}
 	.skills .container{
 		font-size: 2vw;
-		background-color: white;
 	}
 	.skills .container .m1{
 		text-align: center;
@@ -597,10 +604,10 @@ footer .container .conredes li{
 	/* skill final */
 	/* aboutme inicio */
 	.aboutme{
-		background-image:none;
+		background-position: -800px;
 	}
 	.aboutme .container {
-		background: white;
+
 		backdrop-filter: none;
 		font-size: 1.6vw;
 	}
@@ -682,6 +689,12 @@ footer .container .conredes li{
 	.proyects .container .m1 h1{
 		font-size: 8vw;
 		padding: 0.6rem;
+	}
+	.proyects .container .proyec .pr .prhover a{
+		margin-top: 12px;
+		font-size: 0.9rem;
+		padding: 0px;		
+
 	}
 	/* proyects inicio */
 	
