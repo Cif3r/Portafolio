@@ -157,18 +157,22 @@ nav.mobil{
 	border-radius: 0px;
 }
 .aboutme .container .m1{
-	text-align: start;
+	text-align: left;
 	width: 80%;
-	padding: 0%;
-	margin: 0%;
 	margin-top: 3rem;
 }
 .aboutme .container .m1 h1{
-	border-bottom:3px solid red ;
+	border-bottom:3px solid rgb(224, 0, 0) ;
+	padding: 1rem;
+	background-color: #ffffff8a;
+	border-radius: 30px;
+	backdrop-filter: blur(20px);
 }
 .aboutme .container .m1 h3 {
 	color: rgb(43, 172, 177);
 	font-size: 0.9em;
+	padding:2rem;
+	margin-top:9px;
 }
 .aboutme .container .contenedor{
 	width: 80%;
@@ -245,21 +249,26 @@ nav.mobil{
 	padding: 60px 15px;
 	justify-content: center;
 	width: 100%;
-	text-align: left;
 	padding: 0%;
 }
-.skills .m1{
-	text-align: center;
+.skills .container .m1{
+	padding-top: 6rem;
+	text-align: right;
+	width: 80% ;
 }
 .skills .container .m1 h1{
 	border-bottom:3px solid rgb(43, 172, 177) ;
+	background-color: #ffffff8a;
+	padding: 0.6rem;
+	border-radius: 30px;
+	backdrop-filter: blur(20px);
 }
 .skills .container .icons{
 	display: flex;
 	padding-top: 6rem;
 	justify-content: center;
 	flex-wrap: wrap;
-	width: 70%;
+	width: 80%;
 }
 .skills .container .icons img{
 	height: 4rem;
@@ -295,7 +304,7 @@ nav.mobil{
   justify-content: space-around;
 }
 .skills .container .cajas .bloque{
-  padding: 1rem;
+
   margin: 2rem;
   display: flex;
   flex-direction: column;
@@ -305,8 +314,9 @@ nav.mobil{
   font-size: 14px;
   flex: 0 0 calc(40% - 10px);
   max-width: calc(40% - 10px);
-  max-height: 12rem;
-  background-color: rgb(255, 255, 255);
+  min-height: 14rem;
+  background-color: rgba(255, 255, 255, 0.164);
+  backdrop-filter: blur(90px);
 }
 .skills .container .cajas .bloque h3{
   margin-top: 0;
@@ -317,10 +327,18 @@ nav.mobil{
   margin:0 12px;
   font-size: 16px;
 }
+.skills .container .cajas .bloque svg{
+	background-color: rgba(42, 108, 221, 0.05);
+	width: 60px;
+	height: 60px;
+	padding: 9px;
+	border-radius: 20px;
+  }
 .skills .container .cajas .bloque:hover{
 	transition: 0.6s;
-	border:1px dotted rgb(134, 130, 130);
-	background-color: rgb(43, 172, 177);
+	border:1px dotted rgb(96, 157, 185);
+	background-color: rgba(43, 173, 177, 0.582);
+	backdrop-filter: blur(90px);
 	color: white;
 }
 /* skill final */
@@ -341,13 +359,16 @@ nav.mobil{
 	max-width: 80%;	
 }
 .proyects .container .m1{
-	margin: 60px 0;
-	text-align: center;
+	margin: 6rem 0px;
+	width: 80%;
+	text-align: left;
 }
 .proyects .container .m1 h1{
-	margin: 30px 0;
-	text-align: center;
-	border-bottom-color: #4eac55e5;
+	border-bottom:3px solid rgb(216, 7, 0) ;
+	background-color: #ffffff8a;
+	padding: 0.6rem;
+	border-radius: 30px;
+	backdrop-filter: blur(20px);
 }
 .proyects .container .proyec{
 	display: flex;
@@ -361,7 +382,7 @@ nav.mobil{
 	position: relative;
 }
 .proyects .container .proyec .pr img{
-	max-height: 14rem;
+	max-height: 12rem;
 }
 .proyects .container .proyec .pr .prhover{
     font-family: 'Righteous', cursive;
@@ -445,6 +466,14 @@ footer .base{
 footer .base hr{
 	max-width: 60%;
 }
+footer .container .conredes{
+	display: flex;
+	list-style: none;
+}
+footer .container .conredes li{
+	padding: 3px;
+}
+
 /* footer final */
 /* -------------------------------------------------------------------- */
 /* CONTAINER BASIC CONFIGURACION INICIO */
@@ -468,39 +497,104 @@ footer .base hr{
 }
 /* CONTAINER BASIC CONFIGURACION FINAL */
 /* -------------------------------------------------------------------- */
-
-
-
-
 @media only screen and (max-width: 1080px){
+ .aboutme .container{
+	 font-size: 1.5vw;
+ }
+ .skills .container .icons{
+	 width: 90%;
+ }
+ .aboutme .container .contenedor .foto img{
+	width: 23vw;
+    height: 26vw;
+    box-shadow: 6px 6px 30px #d1d9e6;
+    border-radius: 20px;
+	margin-top: -6px;
+ }
+}
+
+
+
+
+
+@media only screen and (max-width: 780px){
 	/* header query inicio */
 	header .header{
 		font-size: 1rem;
 	}	
 	/* header query final */
-/* -------------------------------------------------------------------- */
 	/* nav mb inicio */
 	nav.mb{
 		display: none;
 	}
 	/* nav mb final */
-/* -------------------------------------------------------------------- */
-	/* inicio */
+		/* inicio */
 	.inicio{
 		background-image: none;
 		font-size: 10vw;
 	}
 	.inicio .container{
-		font-size: 1.6vw;
+		font-size: 2.9vw;
 	}
 	/* inicio */
-/* -------------------------------------------------------------------- */
 	/* skill inicio */
+	.skills .container .m1 {
+		padding-top: 0rem;
+		margin-top: 3rem;
+	}
 	.skills{
 		background-image: none;
 	}
+	.skills .container{
+		font-size: 2vw;
+		background-color: white;
+	}
+	.skills .container .m1{
+		text-align: center;
+	}
+	.skills .container .m1 h1{
+		font-size: 8vw;
+		padding: 0.6rem;
+	}
+	.skills .container .icons{
+		padding-top: 10%;
+		padding-bottom: 1%;
+		max-width: 100%;
+		font-size: 1.6vw;
+		min-width: 90%;
+		margin-top: 0px;
+	}
+	.skills .container .icons .icon{
+		flex: 0 0 80%;
+		max-width: 90%;
+		transition: 1000ms;
+		margin-left: 0;
+		margin-right: 0;
+		font-size: 3.6vw;
+		padding: 0 0;
+	}
+	.skills .container .icons .icon img{
+		height: 2rem;
+		height: 3rem;
+	}
+	.skills .container .cajas{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 30px;
+		width: 80%;
+		justify-content: space-around;
+		padding-bottom: 3%;
+	}
+	.skills .container .cajas .bloque{
+		flex: 0 0 calc(93%);
+		max-width: calc(93%);
+		max-height: 12rem;
+		padding: 9px 0px;
+	}
+	.skills .container .cajas .bloque p{
+		margin: 0px;
+	}
 	/* skill final */
-/* -------------------------------------------------------------------- */
 	/* aboutme inicio */
 	.aboutme{
 		background-image:none;
@@ -513,6 +607,9 @@ footer .base hr{
 	.aboutme .container .contenedor{
 		flex-direction: column;
 		align-items:center ;
+	}
+	.aboutme .container .m1{
+		text-align: center;
 	}
 	.aboutme .container .contenedor .foto img{
 		width: 160px;
@@ -531,6 +628,16 @@ footer .base hr{
 		text-align: center;
 		background-color: white;
 		backdrop-filter: none;
+		padding: 0px;
+	}
+	.aboutme .container .contenedor .text1 h4{
+		font-size: 3vw;
+	}
+	.aboutme .container .contenedor .text1 h2{
+		font-size: 4vw;
+	}
+	.aboutme .container .contenedor .text1 h3{
+		font-size: 2.3vw;
 	}
 	.aboutme .container .contenedor .text1 .conredes li a svg{
 		border-radius: 35rem;
@@ -539,63 +646,44 @@ footer .base hr{
 	.aboutme .container .contenedor .text1 .conredes li{
 		background-color: none;
 		border-radius: 50%;
+		margin-bottom: 3rem;
 
 	}
-	.aboutme .container .contenedor .text1 .disubi div {
-		display: inline-flex;
-		border-right: 1px solid red;
-		border-left: 1px solid red;
-		border-bottom: none;
-		height: 1.6rem;
-	}
-	.aboutme .container .m1, .m1 h1, .m1 h3{
-		display: flex;
+	.aboutme .container .contenedor .text1 .disubi{
 		flex-direction: column;
 		align-items: center;
 	}
+	.aboutme .container .contenedor .text1 .disubi div {
+		display: inline-flex;
+		border-bottom: none;
+		
+	}
+	.aboutme .container .contenedor .text1 .disubi div h3{
+		color: rgb(43, 172, 177);
+		font-size: 1.3rem;
+	}
+	.aboutme .container .contenedor .text1 .disubi div h3 span{
+		color: rgb(177, 0, 0);
+		font-size: 0.9rem;
+	}
+	.aboutme .container .m1 h3{
+		font-size: 3.6vw;
+		padding: 0.6rem;
+	}
+	.aboutme .container .m1 h1{
+		font-size: 8vw;
+		padding: 0.6rem;
+	}
 	/* aboutme final */
-
-	/* skill inicio */
-	.skills .container{
-		font-size: 2vw;
-		background-color: white;
+	/* proyects inicio */
+	.proyects .container .m1{
+		text-align: center;
 	}
-	.skills .container .cajas{
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 30px;
-		width: 80%;
-		justify-content: space-around;
-		padding-bottom: 3%;
+	.proyects .container .m1 h1{
+		font-size: 8vw;
+		padding: 0.6rem;
 	}
-	.skills .container .cajas .bloque{
-		margin-bottom: 12px;
-		flex: 0 0 calc(50% - 20px);
-		max-width: calc(50% - 20px);
-	}
-	.skills .container .icons{
-		padding-top: 10%;
-		padding-bottom: 1%;
-		max-width: 100%;
-		font-size: 1.6vw;
-		min-width: 90%;
-		margin-top: 0px;
-	}
-	.skills .container .icons .icon{
-		flex: 0 0 40%;
-		width: 40%;
-		transition: 1000ms;
-		margin-left: 0;
-		font-size: 2vw;
-
-	}
-	.skills .container .icons .icon img{
-		height: 2rem;
-	}
-	.skills .container .cajas .bloque p{
-		margin: 0px;
-	}
-	/* skill final */
+	/* proyects inicio */
 	
 	/* nav mobil incio */
 	nav.mobil{
@@ -629,52 +717,32 @@ footer .base hr{
 		}
 }
 
-@media only screen and (max-width: 768px){
-	/* proyects inicio */
-	.proyects .container .m1 h1{
-		font-size: 9.2vw;
-		margin: 0px;
-	}
-	/* proyects final */
-	/* skill inicio */
-	.skills .container .icons{
-		padding-top: 10%;
-		padding-bottom: 1%;
-	}
-	.skills .container .icons .icon{
-		flex: 0 0 100%;
-		max-width: 100%;
-		transition: 1000ms;
-		margin-left: 0;
-		margin-right: 0;
-		font-size: 4.6vw;
-		padding: 0 0;
-	}
-	.skills .container .icons .icon img{
-		height: 2rem;
-		height: 3rem;
-	}
-	.skills .container .cajas .bloque{
-		flex: 0 0 calc(70% - 10px);
-		max-width: calc(70% - 10px);
-		max-height: 12rem;
-		padding: 12px 0px;
-	}
-	/* skill final */
-}
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 480px){
 	.aboutme .container .contenedor .text1 h2 span{
 		font-size:0.9rem;	
 	}
+	.aboutme .container .contenedor .text1 {
+		width: 100%;
+	}
+	.aboutme .container .contenedor .text1 h3{
+		font-size: 3.3vw;
+	}
+	.aboutme .container .contenedor .text1 h2{
+		font-size: 4.3vw;
+	}
 	.aboutme .container .contenedor .text1 h4{
-		font-size:13px;
+		font-size:4vw;
+	}
+	.aboutme .container .contenedor .foto {
+		display: flex;
+		justify-content: center;
 	}
 	.aboutme .container .contenedor .foto img{
 		box-shadow: 6px 6px 30px #d1d9e6;
 		border-radius: 50%;
-		height: 35vw;
-		width: 100%;
+		height: 50vw;
+		width: 50vw;
+
 	}
 	/* proyects final */
 	.proyects .container .proyec .pr img{
