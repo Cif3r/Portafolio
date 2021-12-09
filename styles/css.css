@@ -207,7 +207,7 @@ nav.mobil{
 	margin-top: 3rem;
 }
 .aboutme .container .m1 h1{
-	border-bottom:3px solid rgb(0, 0, 0) ;
+	border-bottom:3px solid rgb(224, 0, 0) ;
 	padding: 1rem;
 	background-color: #ffffff8a;
 	border-radius: 30px;
@@ -256,7 +256,7 @@ nav.mobil{
 .aboutme .container .contenedor .text1 h3{
 	font-size: 0.9em;
 	margin-top: 6px;
-	color:rgb(204, 15, 15);
+	color:rgb(0, 0, 0);
 }
 .aboutme .container .contenedor .text1 h4{
 	font-size: 0.9em;
