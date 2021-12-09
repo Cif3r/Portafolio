@@ -9,6 +9,17 @@
 	--colorhtml:#ffffff;
 }
 
+
+
+
+html, body{
+    min-height: 100vh;
+    background-color: var(--colorhtml);
+	background-attachment: fixed;
+	overflow-x: hidden;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
 /* performance backgrounds */
 .webp .inicio{
 	background-image: url(/imgs/f5.webp);
@@ -44,17 +55,6 @@
 }
 .no-webp footer{
 	background-image: url(/imgs/fondofoo.png);
-}
-
-.webp 
-
-html, body{
-    min-height: 100vh;
-    background-color: var(--colorhtml);
-	background-attachment: fixed;
-	overflow-x: hidden;
-	box-sizing: border-box;
-	scroll-behavior: smooth;
 }
 body::-webkit-scrollbar-thumb {
     background-color: red;	
