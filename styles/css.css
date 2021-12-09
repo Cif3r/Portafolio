@@ -45,6 +45,12 @@ h2, h1, h3, h4, h5, p{
 	transition: all .5s ease;
 	z-index: 13;
 }
+header .header a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 2rem;
+	font-weight: 600;
+}
 .header.fixed{
 transition: bottom 5s;
 width: 100%;
@@ -148,7 +154,7 @@ nav.mobil{
 	justify-content: center;
 	width: 100%;
 	text-align: left;
-	padding: 0%;
+
 }
 .aboutme .container{
 	background: rgb(255,255,255);
@@ -529,7 +535,7 @@ footer .container .conredes li{
 	}	
 	.header.fixed{
 		height: 10vw;
-		}
+	}
 	/* header query final */
 	/* nav mb inicio */
 	nav.mb{
@@ -604,7 +610,8 @@ footer .container .conredes li{
 	/* skill final */
 	/* aboutme inicio */
 	.aboutme{
-		background-position: -800px;
+		background-position: -44rem;
+		background-size: cover;
 	}
 	.aboutme .container {
 
@@ -763,17 +770,3 @@ footer .container .conredes li{
 	}
 	/* proyects final */
 	}
-
-@media only screen and (max-width: 1230px){
-	.foto{
-		flex:0 0 30% ;
-		max-width: 30%;
-	}
-}
-
-@media only screen and (max-width: 1100px){
-	.foto{
-		flex:0 0 10% ;
-		max-width: 40%;
-	}
-}
