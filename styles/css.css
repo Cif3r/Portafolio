@@ -45,6 +45,9 @@
 .no-webp footer{
 	background-image: url(/imgs/fondofoo.png);
 }
+
+.webp 
+
 html, body{
     min-height: 100vh;
     background-color: var(--colorhtml);
@@ -621,7 +624,7 @@ footer .container .conredes li{
 		padding: 0 0;
 	}
 	.skills .container .icons .icon img{
-		height: 2rem;
+		height: 3rem;
 		height: 3rem;
 	}
 	.skills .container .cajas{
