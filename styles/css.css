@@ -8,6 +8,43 @@
 
 	--colorhtml:#ffffff;
 }
+
+/* performance backgrounds */
+.webp .inicio{
+	background-image: url(/imgs/f5.webp);
+}
+.no-webp .inicio{
+	background-image: url(/imgs/f5.jpeg);
+}
+/* background aboutme */
+.webp .aboutme{
+	background-image: url(/imgs/f4.webp);
+}
+.no-webp .aboutme{
+	background-image: url(/imgs/f4.jpeg);
+}
+/* background skills */
+
+.webp .skills{
+	background-image:url(/imgs/f3.webp);
+}
+.no-webp .skills{
+	background-image:url(/imgs/f3.jpeg);
+}
+/* background proyects */
+.webp .proyects{
+	background-image:url(/imgs/f2.webp);
+}
+.no-webp .proyects{
+	background-image:url(/imgs/f2.jpeg);
+}
+/* background aboutme */
+.webp footer{
+	background-image: url(/imgs/fondofoo.webp);
+}
+.no-webp footer{
+	background-image: url(/imgs/fondofoo.png);
+}
 html, body{
     min-height: 100vh;
     background-color: var(--colorhtml);
@@ -148,7 +185,6 @@ nav.mobil{
 /* aboutme seccion inicio*/
 .aboutme{
 	display: flex;
-	background-image: url(https://cif3r.github.io/Portafolio/imgs/f4.jpeg);
 	background-size: cover;
 	padding: 60px 15px;
 	justify-content: center;
@@ -250,7 +286,6 @@ nav.mobil{
 .skills {
 	display: flex;
 	flex-direction: column;
-	background-image:url(https://cif3r.github.io/Portafolio/imgs/f3.jpeg);
 	background-size: cover;
 	padding: 60px 15px;
 	justify-content: center;
@@ -354,7 +389,6 @@ nav.mobil{
 /* proyects inicio */
 .proyects {
 	display: flex;
-	background-image:url(https://cif3r.github.io/Portafolio/imgs/f2.jpeg);
 	background-size: cover;
 	padding: 60px 15px;
 	justify-content: center;
