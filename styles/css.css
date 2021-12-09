@@ -110,7 +110,7 @@ nav.mobil{
     align-items: center;
     justify-content: center;
     text-align: center;
-	background-image: url(/imgs/f5.jpeg);
+	background-image: url(https://cif3r.github.io/Portafolio/imgs/f5.jpeg);
 	background-size: cover;
 }
 .inicio .container span.lastname{
@@ -148,7 +148,7 @@ nav.mobil{
 /* aboutme seccion inicio*/
 .aboutme{
 	display: flex;
-	background-image: url(/imgs/f4.jpeg);
+	background-image: url(https://cif3r.github.io/Portafolio/imgs/f4.jpeg);
 	background-size: cover;
 	padding: 60px 15px;
 	justify-content: center;
@@ -250,7 +250,7 @@ nav.mobil{
 .skills {
 	display: flex;
 	flex-direction: column;
-	background-image:url(/imgs/f3.jpeg);
+	background-image:url(https://cif3r.github.io/Portafolio/imgs/f3.jpeg);
 	background-size: cover;
 	padding: 60px 15px;
 	justify-content: center;
@@ -354,7 +354,7 @@ nav.mobil{
 /* proyects inicio */
 .proyects {
 	display: flex;
-	background-image:url(/imgs/f2.jpeg);
+	background-image:url(https://cif3r.github.io/Portafolio/imgs/f2.jpeg);
 	background-size: cover;
 	padding: 60px 15px;
 	justify-content: center;
