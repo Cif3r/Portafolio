@@ -1,0 +1,157 @@
+@media only screen and (max-width: 1080px){
+	/* header query inicio */
+	header .header{
+		font-size: 1rem;
+	}	
+	/* header query final */
+/* -------------------------------------------------------------------- */
+	/* nav mb inicio */
+	nav.mb{
+		display: none;
+	}
+	/* nav mb final */
+/* -------------------------------------------------------------------- */
+	/* inicio */
+	.inicio{
+		background-image: none;
+		font-size: 10vw;
+	}
+	.inicio .container{
+		font-size: 1.6vw;
+	}
+	/* inicio */
+/* -------------------------------------------------------------------- */
+	/* skill inicio */
+	.skills{
+		background-image: none;
+	}
+	/* skill final */
+/* -------------------------------------------------------------------- */
+	/* aboutme inicio */
+	.aboutme{
+		background-image:none;
+	}
+	.aboutme .container {
+		background: white;
+		backdrop-filter: none;
+		font-size: 1.6vw;
+	}
+	.aboutme .container .contenedor{
+		flex-direction: column;
+		align-items:center ;
+	}
+	.aboutme .container .contenedor .foto img{
+		width: 160px;
+		height: 200px;
+		box-shadow: 3px 3px 15px #000000;
+		border-radius: 50%;
+		height: 35vw;
+		width: 100%;
+		margin-top: 6px;
+	}
+	.aboutme .container .contenedor .foto {
+		flex: 0 0 45%;
+		margin: auto;
+	}
+	.aboutme .container .contenedor .text1{
+		text-align: center;
+		background-color: white;
+		backdrop-filter: none;
+	}
+	.aboutme .container .contenedor .text1 .conredes li a svg{
+		border-radius: 35rem;
+
+	}
+	.aboutme .container .contenedor .text1 .conredes li{
+		background-color: none;
+		border-radius: 50%;
+
+	}
+	.aboutme .container .contenedor .text1 .disubi div {
+		display: inline-flex;
+		border-right: 1px solid red;
+		border-left: 1px solid red;
+		border-bottom: none;
+		height: 1.6rem;
+	}
+	.aboutme .container .m1, .m1 h1, .m1 h3{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	/* aboutme final */
+
+	/* skill inicio */
+	.skills .container{
+		font-size: 2vw;
+		background-color: white;
+	}
+	.skills .container .cajas{
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 30px;
+		width: 80%;
+		justify-content: space-around;
+		padding-bottom: 3%;
+	}
+	.skills .container .cajas .bloque{
+		margin-bottom: 12px;
+		flex: 0 0 calc(50% - 20px);
+		max-width: calc(50% - 20px);
+	}
+	.skills .container .icons{
+		padding-top: 10%;
+		padding-bottom: 1%;
+		max-width: 100%;
+		font-size: 1.6vw;
+		min-width: 90%;
+		margin-top: 0px;
+	}
+	.skills .container .icons .icon{
+		flex: 0 0 40%;
+		width: 40%;
+		transition: 1000ms;
+		margin-left: 0;
+		font-size: 2.3vw;
+
+	}
+	.skills .container .icons .icon img{
+		height: 2rem;
+	}
+	.skills .container .cajas .bloque p{
+		margin: 0px;
+	}
+	/* skill final */
+	
+	/* nav mobil incio */
+	nav.mobil{
+		display: flex;
+		position: fixed;
+		bottom:8px;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		z-index: 13;	
+	}
+	nav.mobil ul, li{
+		display: inline-flex;
+		width:max-content;
+		text-decoration:none;
+		flex-grow:1;
+	}
+	nav.mobil div{
+		display:flex ;
+		margin: 1rem;
+		justify-content: space-around;
+		flex-grow:1;
+		background-color:rgba(255, 255, 255, 0.596);
+		box-shadow: 0px 0px 25px rgb(0 0 0 / 12%);
+		border-radius: 3rem;
+		width: 94%;
+	}
+	/* nav mobil final */
+	footer .container .pfooter{
+			max-width: 100%;
+		}
+
+} 
