@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Zen+Kaku+Gothic+New:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Teko:wght@300;400;500&family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Space+Mono:wght@700&family=Teko:wght@300;400;500&family=Ubuntu+Mono:wght@700&display=swap');
 /* preinicio general */
 :root{
 	--backcolor1:#d0d1d3e5;
@@ -57,13 +61,13 @@ html, body{
 	background-image: url(/imgs/fondofoo.png);
 }
 body::-webkit-scrollbar-thumb {
-    background-color: red;	
-    border-radius: 12px;
-	height: 30px;
+    background-color: rgb(0, 0, 0);	
+    border-radius: 6px;
+	height: 3px;
 }
 body::-webkit-scrollbar {
-    width: 19px;
-    background-color: #ffffff;
+    width: 12px;
+    background-color: #ffffff00;
 }
 *,
 *:before,
@@ -71,8 +75,14 @@ body::-webkit-scrollbar {
 	box-sizing: inherit;
 }
 h2, h1, h3, h4, h5, p{
-    font-family: 'Roboto Mono', monospace;
+
+	font-family: 'Ubuntu Mono', monospace;
 }
+
+h2, h1{
+		font-family: 'Atomic Age', cursive
+	}
+
 /* preinicio general */
 /*** header inicio ***/
 .header{
@@ -85,12 +95,44 @@ h2, h1, h3, h4, h5, p{
 	transition: all .5s ease;
 	z-index: 13;
 }
+
 header .header a{
 	text-decoration: none;
 	color: #000000;
 	font-size: 2rem;
 	font-weight: 600;
 }
+
+.header .logo1{
+	font-size: 1.6rem;
+	font-family: 'Atomic Age', cursive;
+	display: inline-flex;
+	align-items: center;
+    border-style: solid;
+	margin-top: 3px;
+	margin-bottom: 3px;
+    padding: .3%;
+    border-radius: 2em;
+    border-width: 6px;
+    border-color: rgba(255, 255, 255, 0.411);
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.header .logo1  img{
+	height: 1em;
+}
+
+.header .logo1 .icon_logo{
+	display: inline-flex;
+	margin-left: 9px;
+	padding: 6px;
+	align-items: center;
+	background-color: rgb(0, 0, 0);
+	border-radius: 50%;
+
+}
+
 .header.fixed{
 transition: bottom 5s;
 width: 100%;
@@ -120,6 +162,7 @@ nav.mb ul li {
 	display: inline-flex;
 }	
 nav.mb ul li a{
+	font-family: 'Atomic Age', cursive;
 	width:10vw;
 	margin: 0%;
 	padding: 9px;
@@ -154,7 +197,8 @@ nav.mobil{
 	background-size: cover;
 }
 .inicio .container span.lastname{
-	display: inline;
+	display: inline-flex;
+	align-items: center;
     border-style: solid;
     padding: 1%;
     border-radius: 2em;
@@ -169,6 +213,20 @@ nav.mobil{
 	cursor: pointer;
 	font-size: 1.5em;
 	font-weight: 600;
+}
+
+.inicio .container .icon_logo img{
+	height: 1em;
+}
+
+.inicio .container .icon_logo{
+	display: inline-flex;
+	margin-left: 9px;
+	padding: 6px;
+	align-items: center;
+	background-color: white;
+	border-radius: 50%;
+
 }
 .inicio .container .btn:hover, .inicio .container .btn:focus {
 	color: rgb(8, 40, 144);
@@ -275,14 +333,42 @@ nav.mobil{
 	display: flex;
 	justify-content: space-between;
 }
+.aboutme .container .contenedor .text1 .conredes {
+	width: 100%;
+	text-align: center;
+}
+.aboutme .container .contenedor .text1 .conredes ul {
+	width: 80%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0;
+}
 .aboutme .container .contenedor .text1 .conredes li{
-	margin-top: 2%;
 	display: inline-flex;
 	list-style: none;
 	text-decoration: none;
-	background-color: rgb(0, 0, 0);
 	align-items: center;
 }
+.aboutme .container .contenedor .text1 .conredes li svg{
+background-color: #000000;
+border-radius: 30px;
+padding: 6px;
+transition: background 0.9s ease-in-out;
+}
+
+.aboutme .container .contenedor .text1 .conredes li svg:hover{
+	background-color: #ffffff;
+	background-position-y: 100%;
+	transition: background 0.9s ease-in-out;
+	stroke: #000000;
+	border: 1px solid #000000;
+	border-radius: 30px;
+	padding: 6px;
+	box-shadow: 0px 1px 57px -6px rgba(0, 0, 0, 0.87);
+-webkit-box-shadow: 0px 1px 57px -6px rgba(0,0,0,0.87);
+-moz-box-shadow: 0px 1px 57px -6px rgba(0,0,0,0.87);
+	}
 /* aboutme seccion final*/
 /* -------------------------------------------------------------------- */
 /* skill inicio */
@@ -319,6 +405,65 @@ nav.mobil{
 	border-radius: 50%;
 	
 }
+
+@keyframes progreso {
+    100% {
+        width: 80%;
+    }
+
+}
+
+
+
+.skills .container .icons .icon #contenedor{
+
+    width: 80%;
+    height: 23px;
+    margin: 0 auto;
+    border: 2px solid #000000;
+	border-radius: 30px;
+
+}
+
+
+
+.skills .container .icons .icon .barramsm{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.skills .container .icons .icon .barramsm #contenedor #barra{
+    width: 0;
+	display: none;
+    height: 100%;
+    background: #ff4f19;
+	border-radius: 30px;
+	animation-name:progreso ;
+	animation-duration:  3s;
+	animation-iteration-count:1;
+	animation-fill-mode:forwards;	
+}
+.skills .container .icons .icon .barramsm #contenedor #barra #porcentaje:after{
+	content: '0%';
+}
+
+.skills .container .icons .icon .barramsm #contenedor #barra #porcentaje{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #ffffff;	
+}
+
+
+
+
 .skills .container .icons .icon{
   display: flex;
   background-color: rgb(232 235 236 / 70%);
@@ -335,12 +480,12 @@ nav.mobil{
 
 }
 .skills .container .icons .icon h5{
+	margin: 3px;
   padding-left: 10px;
   font-weight: 900;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
-  background-color: #ffffff;
-  border-radius: 3px;
+
 }
 .skills .container .icons .icon:hover{
 	box-shadow: 0 0 10px 0 rgb(43, 172, 177) inset, 0 0 10px 4px rgb(43, 172, 177);
@@ -435,7 +580,7 @@ nav.mobil{
 	max-height: 12rem;
 }
 .proyects .container .proyec .pr .prhover{
-    font-family: 'Righteous', cursive;
+	font-family: 'Atomic Age', cursive;
 	position: absolute;
 	cursor: default;
 	left: 0;
@@ -576,8 +721,23 @@ footer .container .conredes li{
 		font-size: 1rem;
 	}	
 	.header.fixed{
-		height: 10vw;
+		height: 16vw;
+		background-color: rgba(15, 14, 14, 0.164);
 	}
+	.header .logo1{
+		font-size: 9.6vw;
+		height: 10vw;
+		margin: 3px;
+		padding: 1.3rem;
+		margin-bottom:3px;
+		border-width: 6px;
+	}
+	.header .logo1  .icon_logo{
+	padding: 0;
+
+	
+}
+
 	/* header query final */
 	/* nav mb inicio */
 	nav.mb{
@@ -702,7 +862,7 @@ footer .container .conredes li{
 	.aboutme .container .contenedor .text1 .conredes li{
 		background-color: none;
 		border-radius: 50%;
-		margin-bottom: 3rem;
+
 
 	}
 	.aboutme .container .contenedor .text1 .disubi{
