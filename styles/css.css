@@ -28,8 +28,7 @@ html, body{
 /* performance backgrounds */
 .webp .inicio{
 /* 	background-image: url(/imgs/f5.webp); */
-background: rgb(105,11,210);
-background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgb(10, 150, 175)0%, rgba(221, 30, 30, 0.548) 100%);
 }
 /* .no-webp .inicio{
 	background-image: url(/imgs/f5.jpeg);
@@ -37,8 +36,8 @@ background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
 /* background aboutme */
 .webp .aboutme{
 /* 	background-image: url(/imgs/f4.webp); */
-background: rgb(105,11,210);
-background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
+background: rgb(10, 150, 175);
+background: radial-gradient(circle, rgb(10, 150, 175)0%, rgba(221, 30, 30, 0.548) 100%);
 }
 /* .no-webp .aboutme{
 	background-image: url(/imgs/f4.jpeg);
@@ -47,8 +46,8 @@ background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
 
 .webp .skills{
 /* 	background-image:url(/imgs/f3.webp); */
-background: rgb(105,11,210);
-background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
+background: rgb(10, 150, 175);
+background: radial-gradient(circle, rgb(10, 150, 175)0%, rgba(221, 30, 30, 0.548) 100%);
 }
 /* .no-webp .skills{
 	background-image:url(/imgs/f3.jpeg);
@@ -57,7 +56,7 @@ background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
 .webp .proyects{
 /* 	background-image:url(/imgs/f2.webp); */
 background: rgb(105,11,210);
-background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgb(10, 150, 175)0%, rgba(221, 30, 30, 0.548) 100%);
 }
 /* .no-webp .proyects{
 	background-image:url(/imgs/f2.jpeg);
@@ -65,8 +64,7 @@ background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
 /* background aboutme */
 .webp footer{
 /* 	background-image: url(/imgs/fondofoo.webp); */
-background: rgb(105,11,210);
-background: radial-gradient(circle, rgba(105,11,210,1) 0%, rgba(0,0,0,1) 100%);
+background: radial-gradient(circle, rgb(10, 150, 175)0%, rgba(221, 30, 30, 0.548) 100%);
 }
 /* .no-webp footer{
 	background-image: url(/imgs/fondofoo.png);
@@ -278,8 +276,7 @@ nav.mobil{
 
 }
 .aboutme .container{
-	background: rgb(11, 137, 210);
-	background: radial-gradient(circle, rgba(104, 11, 210, 0.548) 0%, rgba(111, 241, 191, 0.411) 100%);
+	background: radial-gradient(circle, rgb(10, 150, 175)0%, rgba(221, 30, 30, 0.548) 100%);
 	backdrop-filter: blur(1px);
 	border-radius: 0px;
 }
