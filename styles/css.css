@@ -927,14 +927,14 @@ footer .container .conredes li svg:hover{
 	nav.mobil ul li a{
 	border:1px solid #ffffff;
 	border-radius: 30%;
-	width: 50%;
+	width: 60%;
 	}
 	nav.mobil div{
 		display:flex ;
 		margin: 1rem;
 		justify-content: space-around;
 		flex-grow:1;
-		background-color:rgb(7, 0, 0);
+		background-color:rgba(7, 0, 0, 0.788);
 		box-shadow: 0px 0px 25px rgb(0 0 0 / 12%);
 		border-radius: 3rem;
 		width: 94%;
