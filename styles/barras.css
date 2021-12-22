@@ -1,0 +1,57 @@
+#contenedor, #contenedor2, #contenedor3, #contenedor4, #contenedor5, #contenedor1{
+    width: 80%;
+    height: 0px;
+    margin: 0 auto;
+    border: 0px solid #000000;
+	border-radius: 30px;
+
+}
+
+.barramsm, .barramsm1, .barramsm2, .barramsm3, .barramsm4, .barramsm5{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+#barra, #barra1, #barra2, #barra3, #barra4, #barra5{
+	width: 0%;
+    height: 100%;
+    background: #ff4f19;
+	border-radius: 30px;
+	transition-duration: 2s;
+
+}
+
+.porcent, .porcent1, .porcent2, .porcent3, .porcent4, .porcent5{
+	font-family: 'Atomic Age', cursive;
+	position: absolute;
+	cursor: default;
+    height:4rem;
+    width:4rem;
+	border: 1px solid rgb(0 0 0 / 22%);
+	box-shadow: 0 0 32px -8px #464646;
+	background-color: rgba(227, 232, 234, .75);
+	backdrop-filter: saturate(180%) blur(20px);
+	-webkit-backdrop-filter: saturate(180%) blur(20px);
+	z-index: 1;
+	border-radius: 18px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: all 3s ease;
+}
+
+@media only screen and (max-width: 780px){
+    .porcent, .porcent1, .porcent2, .porcent3, .porcent4, .porcent5{
+        height:3rem;
+        width:3rem;
+    
+    }
+}
