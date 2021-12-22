@@ -938,9 +938,9 @@ footer .container .conredes li svg:hover{
 		flex-grow:1;
 	}
 	nav.mobil ul li a{
-	border:1px solid #ffffff;
+	border:2px solid #003e49;
 	border-radius: 30%;
-	width: 50%;
+	width: 60%;
 	}
 	nav.mobil div{
 		display:flex ;
