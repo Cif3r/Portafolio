@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Zen+Kaku+Gothic+New:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&family=Ubuntu+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&family=Teko:wght@300;400;500&family=Ubuntu+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&family=Space+Mono:wght@700&family=Teko:wght@300;400;500&family=Ubuntu+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 /* preinicio general */
 :root{
 	--backcolor1:#d0d1d3e5;
@@ -26,10 +23,10 @@ html, body{
 }
 /* performance backgrounds */
 .webp .inicio{
-	background-image: url(/imgs/f5.webp);
+/* 	background-image: url(/imgs/f5.webp); */
 }
 .no-webp .inicio{
-	background-image: url(/imgs/f5.jpeg);
+/* 	background-image: url(/imgs/f5.jpeg); */
 }
 /* background aboutme */
 .webp .aboutme{
@@ -75,12 +72,11 @@ body::-webkit-scrollbar {
 	box-sizing: inherit;
 }
 h2, h1, h3, h4, h5, p{
-
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Poppins', sans-serif;
 }
 
 h2, h1{
-		font-family: 'Atomic Age', cursive
+	font-family: 'Poppins', sans-serif;
 	}
 
 /* preinicio general */
@@ -162,7 +158,7 @@ nav.mb ul li {
 	display: inline-flex;
 }	
 nav.mb ul li a{
-	font-family: 'Atomic Age', cursive;
+	font-family: 'Poppins', sans-serif;
 	width:10vw;
 	margin: 0%;
 	padding: 9px;
@@ -201,9 +197,14 @@ nav.mobil{
 	flex-direction: column;
 	justify-content: center;
 	width: 36rem;
-	height: 36rem;
+		height: 36rem;
 	border-radius: 50%;
+	border: none;
 	background-color: #ffffff8e;
+	box-shadow: 1px 2px 49px 67px rgba(255,255,255,1) inset;
+-webkit-box-shadow: 1px 2px 49px 67px rgba(255,255,255,1) inset;
+-moz-box-shadow: 1px 2px 49px 67px rgba(255,255,255,1) inset;
+	
 }
 .inicio .container span.lastname{
 	display: inline-flex;
@@ -326,9 +327,9 @@ nav.mobil{
 	color:rgb(0, 0, 0);
 }
 .aboutme .container .contenedor .text1 h4{
-	font-size: 0.9em;
+	font-size: 1.1em;
 	margin-top: 6px;
-	color:rgba(0, 0, 0, 0.582);
+	color:rgb(0, 0, 0);
 }
 .aboutme .container .contenedor .text1 .disubi div{
 	display: flex;
